@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/vova/Desktop/Projects/C++/BJoriginal'
+g++ -c src/main.cpp -o src/main.o -I../SFML/include 
+g++ -c src/Player.cpp -o src/Player.o -I../SFML/include 
+g++ -c src/Card.cpp -o src/Card.o -I../SFML/include 
+g++ -c src/Deck.cpp -o src/Deck.o -I../SFML/include 
+g++ -c src/Game.cpp -o src/Game.o -I../SFML/include 
+g++ -o blackjack -L../SFML/lib -lsfml-graphics -lsfml-window -lsfml-system src/main.o src/Player.o src/Card.o src/Deck.o src/Game.o
+make: Leaving directory '/home/vova/Desktop/Projects/C++/BJoriginal'
+ 
